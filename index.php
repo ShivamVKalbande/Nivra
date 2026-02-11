@@ -146,19 +146,44 @@ if (empty($turmeric_products)) {
 
 <section id="contact" class="section" style="background:#f4f7f9">
   <div class="container">
-    <h2 class="section-title">Contact Us</h2>
+    <h2 class="section-title">Connect With Our Export Team</h2>
     <div class="contact-box">
+      
       <div class="contact-details">
-        <p><strong>Email:</strong> mayankpreneur@gmail.com</p>
-        <p><strong>Phone:</strong> +91 8871713115</p>
-        <p><strong>Address:</strong> Raipur, Chhattisgarh, India</p>
+        <h3>Direct Contacts</h3>
+        <p class="contact-subtitle">Get in touch with our representatives for immediate assistance.</p>
+        
+        <div class="representative-grid">
+          <div class="rep-card">
+            <strong>Mayank Agrawal</strong>
+            <a href="tel:+918871713115">+91 8871713115</a>
+          </div>
+
+          <div class="rep-card">
+            <strong>Jivan Patil</strong>
+            <a href="tel:+918605908855">+91 8605908855</a>
+          </div>
+
+          <div class="rep-card">
+            <strong>Jyoti Kanoje</strong>
+            <a href="tel:+917620274330">+91 7620274330</a>
+          </div>
+        </div>
+
+        <div class="hq-info">
+          <p><strong>Headquarters:</strong> Raipur, Chhattisgarh, India</p>
+          <p><strong>Email:</strong> mayankpreneur@gmail.com</p>
+        </div>
       </div>
-      <form id="enquiryForm">
-        <input type="text" name="name" placeholder="Full Name / Company" required />
-        <input type="email" name="email" placeholder="Email Address" required />
-        <textarea name="message" rows="4" placeholder="How can we help? (Variety, Quantity, Destination Port)" required></textarea>
-        <button type="submit">Send Inquiry</button>
+
+      <form id="enquiryForm" class="contact-form">
+        <h3>Send Business Inquiry</h3>
+        <input type="text" name="name" placeholder="Full Name / Company Name" required />
+        <input type="email" name="email" placeholder="Business Email Address" required />
+        <textarea name="message" rows="5" placeholder="Please specify: Variety (e.g., Teja S17), Quantity (MT), and Destination Port." required></textarea>
+        <button type="submit">Submit Export Inquiry</button>
       </form>
+      
     </div>
   </div>
 </section>
