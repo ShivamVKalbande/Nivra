@@ -172,7 +172,7 @@ if (empty($turmeric_products)) {
 
         <div class="hq-info">
           <p><strong>Headquarters:</strong> Raipur, Chhattisgarh, India</p>
-          <p><strong>Email:</strong> mayankpreneur@gmail.com</p>
+          <p><strong>Email:</strong> nivraenterprise@gmail.com</p>
         </div>
       </div>
 
@@ -187,7 +187,38 @@ if (empty($turmeric_products)) {
     </div>
   </div>
 </section>
+<script>
+document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const btn = this.querySelector('button');
+    btn.innerText = 'Sending...';
+    btn.disabled = true;
 
+    fetch('./send-enquiry.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Enquiry sent successfully!');
+            document.getElementById('enquiryForm').reset();
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+    })
+    .finally(() => {
+        btn.innerText = 'Submit Export Inquiry';
+        btn.disabled = false;
+    });
+});
+</script>
 <style>
 /* Header & Theme Colors */
 :root { --primary-blue: #033d7b; --accent-gold: #c69432; }

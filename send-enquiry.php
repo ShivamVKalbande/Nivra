@@ -15,16 +15,22 @@ if ($name === '' || $email === '' || $message === '') {
     exit;
 }
 
-$to = "enquiry@nivraenterprise.com";
+$to = "nivraenterprise@gmail.com";
 $subject = "New Website Enquiry – Nivra Enterprises";
 
-$body = "New enquiry received:\n\n";
-$body .= "Name: $name\n";
-$body .= "Email: $email\n\n";
-$body .= "Message:\n$message\n";
+// Format the body for HTML (since we added HTML headers)
+$body = "<h2>New enquiry received</h2>";
+$body .= "<p><strong>Name:</strong> $name</p>";
+$body .= "<p><strong>Email:</strong> $email</p>";
+$body .= "<p><strong>Message:</strong><br>" . nl2br($message) . "</p>";
 
-$headers = "From: Nivra Website <no-reply@nivraenterprise.com>\r\n";
+// --- ADD THE NEW HEADERS HERE ---
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= "From: Nivra Website <no-reply@nivraenterprise.com>\r\n";
 $headers .= "Reply-To: $email\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion();
+// --------------------------------
 
 if (mail($to, $subject, $body, $headers)) {
     echo json_encode(["success" => true]);
