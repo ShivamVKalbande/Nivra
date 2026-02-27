@@ -16,7 +16,7 @@ if ($name === '' || $email === '' || $message === '') {
 }
 
 $to = "nivraenterprise@gmail.com";
-$subject = "New Website Enquiry – Nivra Enterprises";
+$subject = "New Website Enquiry – Viksit Trade";
 
 // Format the body for HTML (since we added HTML headers)
 $body = "<h2>New enquiry received</h2>";
@@ -27,7 +27,7 @@ $body .= "<p><strong>Message:</strong><br>" . nl2br($message) . "</p>";
 // --- ADD THE NEW HEADERS HERE ---
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= "From: Nivra Website <no-reply@nivraenterprise.com>\r\n";
+$headers .= "From: Viksit Trade Website <no-reply@nivraenterprise.com>\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 // --------------------------------

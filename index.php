@@ -23,7 +23,7 @@ if (empty($turmeric_products)) {
 
 <section class="section trust-section">
   <div class="container">
-    <h2 class="section-title">Why Choose Nivra Enterprises</h2>
+    <h2 class="section-title">Why Choose Viksit Trade</h2>
     <div class="features">
       <div class="feature-box">
         <img src="./images/13.png" alt="Government Approved" />
@@ -61,7 +61,7 @@ if (empty($turmeric_products)) {
       <div class="info-card">
         <span class="card-icon">📜</span>
         <h4>Regulatory Compliance</h4>
-        <p>Nivra Enterprises follows ISO 22000 standards. We ensure safety, labeling, and quality management to meet the requirements of both domestic and global spice markets.</p>
+        <p>Viksit Trade follows ISO 22000 standards. We ensure safety, labeling, and quality management to meet the requirements of both domestic and global spice markets.</p>
       </div>
       <div class="info-card">
         <span class="card-icon">✨</span>
@@ -136,7 +136,7 @@ if (empty($turmeric_products)) {
   <div class="container">
     <div class="about-card">
         <h2>Our Evolution</h2>
-        <p>Nivra Enterprises has its roots as a trusted domestic provider. Driven by global excellence, we transformed into <strong>Nivra Enterprises in 2026</strong>. Our international rebranding reflects our evolution into a globally recognized leader in the spice industry.</p>
+        <p>Viksit Trade has its roots as a trusted domestic provider. Driven by global excellence, we transformed into <strong>Viksit Trade in 2026</strong>. Our international rebranding reflects our evolution into a globally recognized leader in the spice industry.</p>
         <div class="feedback-quote">
             <p>"We place immense value on customer feedback. Your insights directly influence our product development and quality enhancements."</p>
         </div>
