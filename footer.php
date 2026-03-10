@@ -1,6 +1,6 @@
 <footer>
   <img src="./images/logo-transparent.png" height="70" />
-  <p>&copy; 2026 Nivra Enterprises. All Rights Reserved.</p>
+  <p>&copy; 2026 Viksit Trade. All Rights Reserved.</p>
 </footer>
 
 <script>

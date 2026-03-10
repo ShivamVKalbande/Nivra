@@ -4,7 +4,7 @@ include 'data/products.php';
 
 // Get category from URL, default to 'all' for this main listing page
 $category = isset($_GET['category']) ? trim($_GET['category']) : 'all';
-$allowed_categories = ['red-chilli', 'turmeric', 'all'];
+$allowed_categories = ['red-chilli', 'turmeric', 'cumin-seeds', 'all'];
 
 if (!in_array($category, $allowed_categories)) {
     $category = 'all';
@@ -15,6 +15,7 @@ $filtered_products = ($category === 'all') ? $products : getProductsByCategory($
 
 // Dynamic Page Titles
 $page_titles = [
+    'cumin-seeds' => 'Premium Cumin Seeds Collection',
     'red-chilli' => 'Premium Red Chilli Collection',
     'turmeric'   => 'Premium Turmeric Collection',
     'all'        => 'Our Spice Categories'
@@ -45,6 +46,10 @@ $page_title = isset($page_titles[$category]) ? $page_titles[$category] : 'Our Pr
             <a href="products.php?category=turmeric" 
                class="filter-btn <?= $category === 'turmeric' ? 'active' : ''; ?>">
                 Turmeric
+            </a>
+            <a href="products.php?category=cumin-seeds" 
+               class="filter-btn <?= $category === 'cumin-seeds' ? 'active' : ''; ?>">
+               Cumin Seeds
             </a>
         </div>
 
